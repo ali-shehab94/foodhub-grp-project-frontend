@@ -11,18 +11,40 @@ height: 100%;
 } */
 
 .card {
-    border: 1px solid black;
+    border: 1px solid;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
 }
+
+.btn {
+    text-align: center;
+    border-radius: 0.3em ;
+    border: 1px solid;
+}
+
+.input {
+    text-align: left;
+    border-radius: 0.3em ;
+    border: 1px solid ;
+}
+
+.input:focus {
+    border: 1px solid;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 
 /* End of general CSS */
 /* Start sign in css */
 
 .main-sign-in {
-    margin: 10%;
+    background-color: #DADBBD;
     padding: 10%;
     display: flex;
     justify-content: center;
@@ -32,9 +54,15 @@ height: 100%;
 
 .main-sign-in > .card {
     padding: 5%;
-    justify-content: space-evenly; /*not sure*/
+    /* justify-content: space-evenly;  */
+    background-color: #96a4d5;
+    border-color: #a59497;
+    color:#DADBBD
+
 
 }
+
+
 
 .main-sign-in > .card-heading {
     display: flex;
@@ -42,8 +70,41 @@ height: 100%;
     margin-bottom: 10px;
 }
 
-.main-sign-in input {
+.main-sign-in .input {
     width: 100%;
     margin-bottom: 10px;
-
+    text-align: left;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 0.3em ;
+    height: 20%;
+    font-size: 18px;
 }
+
+
+
+.main-sign-in .form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-sign-in .btn {
+    align-self: center;
+    width: 50% ;
+    padding: 0.5em;
+    margin-bottom: 10px;
+}
+
+.main-sign-in p {
+    margin-top: 15px;
+}
+
+.main-sign-in label {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* End of sign page */
+
+
+
