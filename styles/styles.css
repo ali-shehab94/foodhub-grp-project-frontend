@@ -1,4 +1,6 @@
 /* General CSS */
+/*Google font: poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* CSS Reset */
 * {
     margin: 0;
@@ -29,6 +31,7 @@
     color: white;
     border-color: none;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 .btn:hover{
     background-color: #1271e9;
@@ -51,7 +54,7 @@
     display:inline-block ;
     background-color: #1877f2;
     padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     color:#dddfe2 ;
     font-size: 18px;
     border: none;
@@ -62,7 +65,14 @@
     border: 1px solid #1877f2;
     outline: none;
 }
-
+/*It didnt work!!!! DONNO WHY*/
+.input-radio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: 1px solid #1877f2 ;
+    border-radius: 5px;
+    padding: 10px;
+}
 a {
     text-decoration: none;
 }
