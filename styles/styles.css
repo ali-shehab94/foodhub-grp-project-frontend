@@ -27,6 +27,7 @@
     background-color: #1877f2;
     padding: 0 16px;
     color: white;
+    border-color: none;
 }
 .btn:hover{
     background-color: #1271e9;
@@ -40,8 +41,22 @@
     padding: 1em;
     font-size: 1em;
 }
-
 .input:focus {
+    border: 1px solid #1877f2;
+    outline: none;
+}
+.input-date {
+    display:inline-block ;
+    background-color: #1877f2;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color:#dddfe2 ;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.input-date:hover {
     border: 1px solid #1877f2;
     outline: none;
 }
