@@ -21,13 +21,14 @@
     text-align: center;
     border-radius: 0.3em ;
     border: 1px solid;
-    min-height: 35px;
-    min-width: 100px;
+    min-height: 45px;
+    min-width: 130px;
     font-weight: 600;
     background-color: #1877f2;
-    padding: 0 16px;
+    padding: 10 30px;
     color: white;
     border-color: none;
+    font-size: 18px;
 }
 .btn:hover{
     background-color: #1271e9;
@@ -40,6 +41,7 @@
     min-height: 35px;
     padding: 1em;
     font-size: 1em;
+    margin-bottom: 20px;
 }
 .input:focus {
     border: 1px solid #1877f2;
