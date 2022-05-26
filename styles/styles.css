@@ -1,14 +1,14 @@
+/* General CSS */
 /* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
-/* not sure about te img */
-/* img {
-height: 100%;
-} */
+/*For all the header in all pages*/
+.header-logo > img {
+    width: 70%;
+}
 
 .card {
     border: 1px solid;
@@ -41,6 +41,7 @@ a {
 
 
 /* End of general CSS */
+/* ============================================================================ */
 /* Start sign in css */
 
 .main-sign-in {
@@ -58,18 +59,12 @@ a {
     background-color: #96a4d5;
     border-color: #a59497;
     color:#DADBBD
-
-
 }
-
-
-
 .main-sign-in > .card-heading {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .main-sign-in .input {
     width: 100%;
     margin-bottom: 10px;
@@ -80,15 +75,10 @@ a {
     height: 20%;
     font-size: 18px;
 }
-
-
-
 .main-sign-in .form {
     display: flex;
     flex-direction: column;
 }
-
-
 .main-sign-in .btn {
     align-self: center;
     width: 50% ;
@@ -105,6 +95,52 @@ a {
     padding-bottom: 0;
 }
 /* End of sign page */
+/* ============================================================================ */
+/*Start with the Home page*/
+
+.homepage-wrapper {
+    background-image: url(../assets/images/background-img-home.jpg);
+    height: 100vh;
+}
+
+.homepage-header {
+    margin: 0 7% 5% 7%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
 
+.display-user li {
+    color: aliceblue;
+}
 
+.display-user {
+    list-style: none;
+    display: flex;
+}
+
+.display-user img {
+    width: 50px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.foodhub-container-main {
+    text-align: center;
+}
+
+.foodhub-container-main h1 {
+    font-size: 150px;
+    margin: 2%;
+    color: rgb(214, 222, 230);
+}
+
+.search-bar {
+    width: 50%;
+    height: 55px;
+    border-radius: 20px;
+}
+
+/*End of Home page*/
+/*=============================================================================*/
