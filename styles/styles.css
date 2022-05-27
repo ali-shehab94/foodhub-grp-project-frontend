@@ -15,7 +15,7 @@
 
 /*For all the header in all pages*/
 .header-logo img {
-    width: 12%;
+    width: 10%;
     cursor: pointer;
     filter: drop-shadow(0 0 20px black);
     transition: filter 0.3s;
@@ -190,7 +190,7 @@ a {
 }
 
 .homepage-header {
-    margin: 0 7% 5% 7%;
+    margin: 0 7% 3% 7%;
     padding-top: 20px;
     display: flex;
     align-items: center;
@@ -376,8 +376,13 @@ a {
 .footer a {
     font-family: "foodhub-font", Helvetica, sans-serif;
     font-size: 30px;
+    color: black;
 }
 
+.social-icons > img {
+    width: 30px;
+    cursor: pointer;
+}
 
 
 /*End of Home page*/
@@ -467,4 +472,70 @@ a {
 
 .page2 {
     margin-bottom: 0;
+}
+
+/*End of restaurants*/
+/*=============================================================================*/
+/*restaurant page*/
+
+.restaurant-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 300px 0 250px;
+}
+
+.restaurant-container .rest-thumbnail {
+    width: 200px;
+}
+
+.rest-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.rest-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.rest-description > h1, h2 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.opening-hrs {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin-top: 12px;
+    margin-left: 7px;
+}
+
+.rate-us {
+    display: flex;
+}
+
+.rate-us h4, h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.rate-us h5 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.restaurant-section2 {
+    margin: 0 300px 0 250px;
+    margin-top: 20px;
+
+}
+
+.reviews-box {
+    border: 10px #EE5492 solid;
 }
