@@ -148,21 +148,23 @@ a {
     height: 100vh;
 }
 
+
 .display-user li > h4 {
     color: aliceblue;
-    margin-top: 50%;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 
 .display-user {
     list-style: none;
     display: flex;
+    justify-content: space-around;
 }
 
 .display-user img {
     width: 50%;
-    border-radius: 30px;
-    display: inline-block;
+    border-radius: 50px;
 }
 
 .foodhub-container-main {
@@ -198,23 +200,24 @@ a {
     background-color: #EDC5D4;
 }
 
-.discover button {
+.homepage-button {
     margin: 20px 0 20px 0;
     width: 25%;
     height: 130px;
-    background-color: #4280C2;
-    font-family: Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 0.816);
-    font-size: 200%;
+    background-color: #FDD900;
+    font-family: "foodhub-font", Helvetica, sans-serif;
+    color: #44BBC0;
+    font-size: 220%;
     font-weight:bold;
     border: #EE5492 4px solid;
     border-radius: 30px;
 }
 
 .row-container {
+    margin: 2% 0 4% 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -229,9 +232,37 @@ a {
     justify-content: space-around;
     flex-direction: row;
     padding-top: 15px;
+    border: 3px #EE5492 solid;
+    border-radius: 15px;
 }
 
+.row-container > .card {
+    border: none;
+    width: 40%;
+    margin-top: 5%;
+}
 
+.card > .homepage-button {
+    width: 60%;
+}
+
+.card > h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: left;
+}
+
+.rate {
+    margin: 0 10% 0 10%;
+    justify-content: space-around;
+}
+
+.row-container > img {
+    width: 50%;
+    border: 3px #EE5492 solid;
+    border-radius: 15px;
+}
 
 /*End of Home page*/
 /*=============================================================================*/
