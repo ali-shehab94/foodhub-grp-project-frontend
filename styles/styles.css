@@ -539,3 +539,11 @@ a {
 .reviews-box {
     border: 10px #EE5492 solid;
 }
+
+.add-rest {
+    margin-top: 50px;
+}
+
+.add-rest h1 {
+    color: white;
+}
