@@ -13,9 +13,16 @@
 
 /*For all the header in all pages*/
 .header-logo > img {
-    width: 9%;
+    width: 12%;
     cursor: pointer;
+    filter: drop-shadow(0 0 20px black);
+    transition: filter 0.3s;
 }
+
+.header-logo > img:hover {
+    filter: drop-shadow(0 0 20px white);
+}
+
 
 .card {
     border: 1px solid;
@@ -29,10 +36,12 @@
     border-radius: 50px;
     width: 250px;
     cursor: pointer;
+    transition: width 0.3s;
 }
 
 .rest-thumbnail:hover {
-    width: 270px;
+    width: 290px;
+    
 }
 
 .btn {
@@ -154,6 +163,13 @@ a {
     color: aliceblue;
     font-family: Helvetica, sans-serif;
     font-size: 30px;
+    position: relative;
+    top: 4px;
+    transition: filter 0.3s;
+}
+
+.display-user li > img:hover {
+    filter: drop-shadow(0 0 20px white);
 }
 
 
@@ -161,6 +177,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .display-user img {
@@ -179,7 +196,14 @@ a {
     margin: 2% 0 5% 0;
     color: rgb(214, 222, 230);
     text-shadow: -20px -10px 40px black;
+    position: relative;
+    transition: filter 0.3s;
 }
+
+.foodhub-container-main h1:hover {
+    filter: drop-shadow(0 0 20px white);
+}
+
 
 .search-bar {
     width: 50%;
@@ -212,6 +236,11 @@ a {
     font-weight:bold;
     border: #EE5492 4px solid;
     border-radius: 30px;
+    transition: width 0.3s;
+}
+
+.homepage-button:hover {
+    width: 300px;
 }
 
 .row-container {
@@ -245,6 +274,12 @@ a {
 
 .card > .homepage-button {
     width: 60%;
+    transition: width 0.3s;
+}
+
+.card > .homepage-button:hover {
+    width: 290px;
+    
 }
 
 .card > h3 {
@@ -263,6 +298,13 @@ a {
     width: 50%;
     border: 3px #EE5492 solid;
     border-radius: 15px;
+    transition: filter 0.3s;
+    transition: width 0.4s;
+}
+
+.row-container > img:hover {
+    filter: drop-shadow(0 0 20px white);
+    width: 51%;
 }
 
 .footer {
