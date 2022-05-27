@@ -24,6 +24,17 @@
     flex-direction: column;
 }
 
+.rest-thumbnail {
+    border: #EE5492 4px solid;
+    border-radius: 50px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.rest-thumbnail:hover {
+    width: 270px;
+}
+
 .btn {
     text-align: center;
     border-radius: 0.3em;
@@ -45,7 +56,22 @@ a {
     text-decoration: none;
 }
 
-
+.arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1.5vw solid;
+    border-color: #FDD900 transparent transparent #FDD900;
+  }
+  
+.left {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.right {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
 
 /* End of general CSS */
 /* ============================================================================ */
@@ -115,12 +141,18 @@ a {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.homepage1 {
+    height: 100vh;
+}
 
-.display-user li {
+.display-user li > h4 {
     color: aliceblue;
+    margin-top: 50%;
 }
+
 
 .display-user {
     list-style: none;
@@ -152,11 +184,54 @@ a {
     border: #EE5492 7px solid;
     border-radius: 40px;
     opacity: 0.7;
-}
+    padding-left: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}   
 
 .search-bar:hover, .search-bar:focus {
     opacity: 1;
-  }
+}
+
+.discover {
+    text-align: center;
+    background-color: #EDC5D4;
+}
+
+.discover button {
+    margin: 20px 0 20px 0;
+    width: 25%;
+    height: 130px;
+    background-color: #4280C2;
+    font-family: Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.816);
+    font-size: 200%;
+    font-weight:bold;
+    border: #EE5492 4px solid;
+    border-radius: 30px;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.homepage-card-container {
+    width: 1400px;
+    height: 350px;
+    background-color: #44BBC0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+
 
 /*End of Home page*/
 /*=============================================================================*/
