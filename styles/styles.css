@@ -14,17 +14,16 @@
 }
 
 /*For all the header in all pages*/
-.header-logo > img {
+.header-logo img {
     width: 12%;
     cursor: pointer;
     filter: drop-shadow(0 0 20px black);
     transition: filter 0.3s;
 }
 
-.header-logo > img:hover {
+.header-logo img:hover {
     filter: drop-shadow(0 0 20px white);
 }
-
 
 .card {
     border: 1px solid;
@@ -177,6 +176,10 @@ a {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+.header-logo > h1 {
+    font-family: "foodhub-font", Helvetica, sans-serif;
+}
 /* End of sign page */
 /* ============================================================================ */
 /*Start with the Home page*/
@@ -187,10 +190,9 @@ a {
 }
 
 .homepage-header {
-    margin: 0 7% 0% 7%;
+    margin: 0 7% 5% 7%;
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -236,6 +238,7 @@ a {
     margin: 2% 0 5% 0;
     color: rgb(214, 222, 230);
     text-shadow: -20px -10px 40px black;
+    cursor: pointer;
     position: relative;
     transition: filter 0.3s;
 }
@@ -277,6 +280,7 @@ a {
     border: #EE5492 4px solid;
     border-radius: 30px;
     transition: width 0.3s;
+    cursor: pointer;
 }
 
 .homepage-button:hover {
@@ -289,14 +293,18 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-
+.rest-card{
+    display: flex;
+    flex-direction: column;
+}
 
 .homepage-card-container {
     width: 1400px;
     height: 350px;
-    background-color: #44BBC0;
+    background-color: #f5f5f5cb;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -347,15 +355,27 @@ a {
     width: 51%;
 }
 
-.footer {
-    height: 80px;
+
+.footer-wrapper {
     background-color: #4280C2;
+    border-top: 3px #EE5492 solid;
+    text-align: center;
+}
+
+.footer {
+    width: 90%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    border-top: 3px #EE5492 solid;
+    margin-left: 5%;
+    word-spacing: 70px;
+}
 
+.footer a {
+    font-family: "foodhub-font", Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 
@@ -406,5 +426,45 @@ a {
 
 
 
-/*End sign up page*/
+/*End of homepage*/
 /*=============================================================================*/
+/*restaurants page*/
+
+.rest-card h5 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.rest-card h4 {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.section1-restaurants .row-container{
+    margin: 0;
+}
+
+.section1-restaurants .rest-thumbnail {
+    width: 200px;
+}
+
+.section1-restaurants .rest-thumbnail:hover {
+    width: 240px;
+}
+
+.section1-restaurants > h1 {
+    font-family: "foodhub-font", Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    color: white;
+    font-size: 80px;
+    filter: drop-shadow(0 0 20px black);
+    transition: filter 0.3s;
+}
+
+.page2 {
+    margin-bottom: 0;
+}
