@@ -66,6 +66,7 @@ a {
 .left {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+
   }
   
 .right {
@@ -263,6 +264,19 @@ a {
     border: 3px #EE5492 solid;
     border-radius: 15px;
 }
+
+.footer {
+    height: 80px;
+    background-color: #4280C2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-top: 3px #EE5492 solid;
+
+}
+
+
 
 /*End of Home page*/
 /*=============================================================================*/
