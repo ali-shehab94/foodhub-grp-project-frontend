@@ -1,20 +1,18 @@
 //get gender
-function () {
+let gender = null;
+$("#sign-up-btn").click(function(){
     if ($('#male').is(':checked')){
-        return 0
+        gender = 0
     }
     else if ($('#female').is(':checked')){
-        return 1
+        gender = 1
     }
     else if ($('#other').is(':checked')){
-        return 2
+        gender = 2
     }
-}
+})
 
-
-
-
-
+//AXIOS
 $("#sign-up-btn").click(function(){
     let data = new FormData();
 data.append('first_name', $("#firstnametxt").val());
@@ -22,25 +20,29 @@ data.append('last_name', $("#lastnametxt").val());
 data.append('username', $("#usernametxt").val());
 data.append('dob', $("#dob").val());
 //check gender
-data.append('gender', $("#gender").val());
-data.append('email', $("#lastnametxt").val());
-data.append('password', $("#firstnametxt").val());
-data.append('phone_number', $("#lastnametxt").val());
-data.append('address', $("#lastnametxt").val());
+data.append('gender', gender);
+data.append('email', $("#email").val());
+data.append('password', $("#password").val());
+data.append('phone_number', $("#phone_number").val());
+data.append('address', $("#address").val());
 
 axios({
  method: 'post',
- url: 'http://localhost/foodhubphp/insertuser.php',
+ url: 'http://localhost/Food-Hub-Back-end/signUp.php',
  data: data,
 })
 
 .then(function (response) {
- console.log("received  ");
+    console.log(response);
+    console.log("received  ");
  if (response.status==200){
-     window.location.replace("http://localhost/foodhubhtml/bla.php");
+     console.log("Success Hamze")
+     window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
  }else {
      console.log('response error with status code = ' + response.status)
  }
- 
  }
 )});
+
+
+//xampp/htdocs/foodhub-grp-project-frontend/index.html
