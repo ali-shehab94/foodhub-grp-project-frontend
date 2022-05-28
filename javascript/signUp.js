@@ -33,12 +33,19 @@ axios({
 })
 
 .then(function (response) {
-    console.log(response);
+    //let parsed_response = JSON.parse(response.data);
+    //console.log(parsed_response.success);
+    // const myObj = JSON.parse(response);
+    //console.dir(response.data);
+    // console.log('object ' + myObj.name);
+    // console.log('data--> ' + response.success);
+    //console.log( response.data.success);
+    
     //console.log("received  ");
- if (response.data['success']==true){
+ if (response){
      console.log("Success Hamze")
      alert('You have been succefully registered!')
-     window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
+     //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
  }else {
      console.log('response error with status code = ' + response.status)
  }
