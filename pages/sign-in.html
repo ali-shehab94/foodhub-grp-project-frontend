@@ -23,21 +23,27 @@
                 </div>
             </div>
             <div class="input-field">
-                <form class="form" action="#">
+                <form class="form" action="" method="post">
                     <div><br/>
-                        <input class="input" type="text" id="#" name="email" placeholder="Enter you email"><br>
+                        <input class="input" type="text" id="email" name="email" placeholder="Enter you email"><br>
                     </div>
                     <div><br/>
-                        <input class="input" type="password" id="#" name="pass" placeholder="Enter your password"><br><br>
+                        <input class="input" type="password" id="password" name="password" placeholder="Enter your password"><br><br>
                     </div>
-                    <input class="btn" type="submit" value="Sign In">
+                    <input class="btn" type="submit" value="Sign In" id="sign-in-btn">
                   </form>
             </div>
 
-            <p>Don't have an account? <span><a href="#">Register now</a></span></san></p>
+            <p>Don't have an account? <span><a href="signUp.html">Register now</a></span></san></p>
         </div>
         
     </div>
     
+
+    <!--JS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../javascript/signIn.js"></script>
+</body>
 </body>
 </html>

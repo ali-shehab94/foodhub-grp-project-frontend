@@ -34,9 +34,10 @@ axios({
 
 .then(function (response) {
     console.log(response);
-    console.log("received  ");
- if (response.status==200){
+    //console.log("received  ");
+ if (response.data['success']==true){
      console.log("Success Hamze")
+     alert('You have been succefully registered!')
      window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
  }else {
      console.log('response error with status code = ' + response.status)
