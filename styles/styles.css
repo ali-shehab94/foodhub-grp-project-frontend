@@ -555,3 +555,32 @@ a {
 .admin-page h1{
     color: black;
 }
+
+
+/*End of admin page*/
+/*=============================================================================*/
+/*display Restaurants page*/
+
+
+body > .table-displayRestaurants {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-displayRestaurants th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.table-displayRestaurants tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.display-main-res {
+    margin: 15px;
+    font-family: monospace;
+    box-sizing: content-box;
+}
+
+/*End of display Restaurants page*/
+/*=============================================================================*/

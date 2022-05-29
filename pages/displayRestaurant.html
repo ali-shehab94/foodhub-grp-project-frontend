@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <title>Restaurants table</title>
+</head>
+    
+<body style = "text-align:center;"> 
+
+    <div class="display-main-res">
+        <h1 style = "color:rgb(11, 56, 77);"> 
+            DISPLAY RESTAURANTS 
+        </h1>
+        <button id="test">Click to prepare Data</button>
+
+        
+        <button onclick = "displayJson()">
+            click Here To display Table
+        </button>
+        
+        <br><br>
+        
+        <table id="table" class="table-displayRestaurants" style="text-align:center; border:1px; "></table>
+
+    </div>   
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../javascript/testing.js"></script>
+</body>
+</html>
+
