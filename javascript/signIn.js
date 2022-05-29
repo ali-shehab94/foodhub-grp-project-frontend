@@ -21,7 +21,7 @@ axios ({
     myResponse = response.data;
     console.log("received");
  if (response.data){
-    handleResponse(myResponse);
+    //handleResponse(myResponse);
     alert('You are now signed in');
     console.log("Success sign in");
     //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
