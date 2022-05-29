@@ -23,16 +23,6 @@ axios({
 )});
 
 
-// var my_para = document.getElementById("para");
-        
-
-// my_para.innerHTML = "Click on the button to create the "
-//         + "table from the JSON data.<br><br>"
-//         + JSON.stringify(list[0]) + "<br>"
-//         + JSON.stringify(list[1]) + "<br>"
-//         + JSON.stringify(list[2]);  
-
-
 function displayJson() {
     var list = myResponse.data;
     var cols = [];
