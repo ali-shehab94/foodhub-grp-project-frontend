@@ -75,6 +75,12 @@ function sendAcceptRequest(id){
     })
 }
 
-function sendDeleteRequest(){
-    
+function sendDeleteRequest(id){
+    let data = new FormData();
+    data.append('idreview', id);
+    axios({
+    method: 'post',
+    url: 'http://localhost/Food-Hub-Back-end/declineReview.php',
+    data: data,
+    })
 }
