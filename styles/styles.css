@@ -611,7 +611,6 @@ body > .table-displayRestaurants {
 .display-main-res {
     margin: 15px;
     font-family: monospace;
-    box-sizing: content-box;
 }
 
 /*End of display Restaurants page*/
