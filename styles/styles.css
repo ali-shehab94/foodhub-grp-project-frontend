@@ -58,6 +58,7 @@
     border-color: none;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: #1271e9;
@@ -389,7 +390,6 @@ a {
 /*=============================================================================*/
 /*Start with sign up page*/
 .main-sign-up {
-    background-color: #96a4d5;
     height: 100%;
     width: 100%;
 }   
@@ -399,7 +399,9 @@ a {
     flex-direction: column;
     height: 70%;
     padding: 30px;
-    margin:auto 10%;
+    margin:15px 10%;
+    background-color: gray;
+    border-color: #d6c1c5;
 }
 .main-sign-up .container > div {
     margin-bottom: 15px;
@@ -425,6 +427,9 @@ a {
 .main-sign-up .bottom-card {
     text-align: center;
 
+}
+.main-sign-up > .container {
+    
 }
 
 
