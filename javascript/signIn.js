@@ -13,7 +13,7 @@ console.log('Axios here');
 
 axios ({
  method: 'post',
- url: 'http://localhost:80/Food-Hub-Back-end/signIn2.php',
+ url: 'http://localhost:80/Food-Hub-Back-end/signIn.php',
  data: data,
 })
 
