@@ -22,6 +22,7 @@ axios({
  }
 )});
 
+
 function displayJson() {
     var list = myResponse.data;
     var cols = [];
@@ -29,12 +30,13 @@ function displayJson() {
     for (var i = 0; i < list.length; i++) {
         for (var k in list[i]) {
             if (cols.indexOf(k) === -1) {
+                    
                 // Push all keys to the array
                 cols.push(k);
             }
         }
     }
-    
+        
     // Create a table element
     var table = document.createElement("table");
         

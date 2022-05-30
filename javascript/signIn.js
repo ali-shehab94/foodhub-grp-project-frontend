@@ -18,6 +18,7 @@ axios ({
 })
 
 .then(function (response) {
+
     myResponse = response.data;
     console.log("received");
  if (response.data){

@@ -25,19 +25,27 @@
     filter: drop-shadow(0 0 20px white);
 }
 
+.header-logo h1 {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    bottom: 40px;
+}
+
 .card {
-    border: 1px solid;
+    border: 3px solid white;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
 }
 
 .rest-thumbnail {
-    border: #EE5492 4px solid;
+    border: #4280C2 4px solid;
     border-radius: 50px;
     width: 250px;
     cursor: pointer;
     transition: width 0.3s;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .rest-thumbnail:hover {
@@ -108,16 +116,18 @@ a {
     width: 3vw;
     height: 3vw;
     border: 1.5vw solid;
-    border-color: #FDD900 transparent transparent #FDD900;
+    border-color: #1877f2 transparent transparent #1877f2;
   }
   
 .left {
+    filter: drop-shadow(0 0 20px white);
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 
   }
   
 .right {
+    filter: drop-shadow(0 0 20px white);
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
@@ -128,20 +138,20 @@ a {
 /* Start sign in css */
 
 .main-sign-in {
-    background-color: #DADBBD;
+    background-color: #96a4d5;
     padding: 10%;
     display: flex;
     justify-content: center;
     justify-items: center;
-    height: 100%; /*not sure*/
+    height: 100vh;
 }
 
 .main-sign-in > .card {
     padding: 5%;
     /* justify-content: space-evenly;  */
     background-color: #96a4d5;
-    border-color: #a59497;
-    color:#DADBBD
+    border-color: white;
+    color:white;
 }
 .main-sign-in > .card-heading {
     display: flex;
@@ -178,6 +188,21 @@ a {
     padding-bottom: 0;
 }
 
+.text-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-title img {
+    width: 100px;
+    text-align: center;
+}
+
+.text-title h1 {
+    font-family: "foodhub-font", Helvetica, sans-serif;
+}
+
 .header-logo > h1 {
     font-family: "foodhub-font", Helvetica, sans-serif;
 }
@@ -186,8 +211,14 @@ a {
 /*Start with the Home page*/
 
 .homepage-wrapper {
-    background-image: url(../assets/images/dl.beatsnoop.com-1653600141.jpg);
+    background-image: url(../assets/images/462773.jpg);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .homepage-header {
@@ -209,6 +240,7 @@ a {
     position: relative;
     top: 4px;
     transition: filter 0.3s;
+    
 }
 
 .display-user li > img:hover {
@@ -237,7 +269,7 @@ a {
     font-family: "foodhub-font", Arial, Helvetica, sans-serif;
     font-size: 850%;
     margin: 2% 0 5% 0;
-    color: rgb(214, 222, 230);
+    color: white;
     text-shadow: -20px -10px 40px black;
     cursor: pointer;
     position: relative;
@@ -252,7 +284,7 @@ a {
 .search-bar {
     width: 50%;
     height: 80px;
-    border: #EE5492 7px solid;
+    border: #4280C2 7px solid;
     border-radius: 40px;
     opacity: 0.7;
     padding-left: 20px;
@@ -266,19 +298,19 @@ a {
 
 .discover {
     text-align: center;
-    background-color: #EDC5D4;
+    background-color: #bfbfbf;
 }
 
 .homepage-button {
     margin: 20px 0 20px 0;
     width: 25%;
     height: 130px;
-    background-color: #FDD900;
+    filter: drop-shadow(0 0 20px black);
+    background-color: #4280C2;
     font-family: "foodhub-font", Helvetica, sans-serif;
-    color: #44BBC0;
+    color: white;
     font-size: 220%;
     font-weight:bold;
-    border: #EE5492 4px solid;
     border-radius: 30px;
     transition: width 0.3s;
     cursor: pointer;
@@ -311,8 +343,8 @@ a {
     justify-content: space-around;
     flex-direction: row;
     padding-top: 15px;
-    border: 3px #EE5492 solid;
     border-radius: 15px;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .row-container > .card {
@@ -345,7 +377,7 @@ a {
 
 .row-container > img {
     width: 50%;
-    border: 3px #EE5492 solid;
+    border: 3px #4280C2 solid;
     border-radius: 15px;
     transition: filter 0.3s;
     transition: width 0.4s;
@@ -359,7 +391,7 @@ a {
 
 .footer-wrapper {
     background-color: #4280C2;
-    border-top: 3px #EE5492 solid;
+    border-top: 3px  black solid;
     text-align: center;
 }
 
@@ -390,7 +422,8 @@ a {
 /*=============================================================================*/
 /*Start with sign up page*/
 .main-sign-up {
-    height: 100%;
+    background-color: #96a4d5;
+    height: 100vh;
     width: 100%;
 }   
 
