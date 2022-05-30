@@ -45,6 +45,7 @@ axios({
  if (response){
      console.log("Success Hamze")
      alert('You have been succefully registered!')
+     window.location.href = "sign-in.html";
      //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
  }else {
      console.log('response error with status code = ' + response.status)

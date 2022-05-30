@@ -45,6 +45,7 @@
     width: 250px;
     cursor: pointer;
     transition: width 0.3s;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .rest-thumbnail:hover {
@@ -148,7 +149,7 @@ a {
     padding: 5%;
     /* justify-content: space-evenly;  */
     background-color: #96a4d5;
-    border-color: #a59497;
+    border-color: white;
     color:white;
 }
 .main-sign-in > .card-heading {
@@ -238,6 +239,7 @@ a {
     position: relative;
     top: 4px;
     transition: filter 0.3s;
+    
 }
 
 .display-user li > img:hover {
@@ -266,7 +268,7 @@ a {
     font-family: "foodhub-font", Arial, Helvetica, sans-serif;
     font-size: 850%;
     margin: 2% 0 5% 0;
-    color: rgb(214, 222, 230);
+    color: white;
     text-shadow: -20px -10px 40px black;
     cursor: pointer;
     position: relative;
@@ -388,7 +390,7 @@ a {
 
 .footer-wrapper {
     background-color: #4280C2;
-    border-top: 3px #EE5492 solid;
+    border-top: 3px  black solid;
     text-align: center;
 }
 
