@@ -8,7 +8,6 @@ $("#test").click(function(){
      method: 'get',
      url: 'http://localhost/Food-Hub-Back-end/getPendingReviews.php',
     })
-    console.log('hello');
     .then(function (response) {
         console.log('hello');
         mydata = response.data;
