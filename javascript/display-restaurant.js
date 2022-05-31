@@ -1,0 +1,1 @@
+console.log(localStorage.getItem("restaurant_id"));

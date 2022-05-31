@@ -9,28 +9,27 @@ axios({
 
 
 .then(function (response) {
-    console.log(response.data);
     mydata = response.data;
-    console.log(mydata)
     parseData(mydata);
 })
 
 function parseData(obj) {
     for (const data of obj) {
         console.log(data);
-        let id = data.ID;
+        let id = data.restaurant_id;
         let cuisine = data.cuisine;
         let rate = data.rating;
         let RestaurantName = data.name;
         let location = data.address
+        console.log(id)
         console.log(RestaurantName);
         console.log(rate)
         console.log(cuisine)
         console.log(location)
         let element = document.getElementById("rest-card-container");
-        element.innerHTML +=        `<div>
-                                        <div class ='rest-card'>
-                                            <img src='../assets/images/restaurants/restaurant-img.jpeg' alt='chopsticks' class='rest-thumbnail'>
+        element.innerHTML +=        `<div id="${id}">
+                                        <div class ='rest-card' onClick= "selectRestaurant(this)">
+                                            <img src='../assets/images/restaurants/restaurant-img.jpeg' alt='chopsticks' class='rest-thumbnail' id='rest-thumbnail'>
                                             <h5 id='rest1name'>${RestaurantName}</h5>
                                             <div class='row-container'>
                                                 <h4>${cuisine} | ${location}</h4>
@@ -40,6 +39,16 @@ function parseData(obj) {
                                     </div>`
                 
     }
+}
+
+let selectRestaurant = (e) => {
+    let id = e.parentElement.id;
+    console.log("clicked");
+    console.log(id + "id")
+    localStorage.setItem("restaurant_id", id);
+    // console.log("id" + id);
+    window.location.href = "restaurant.html";
+
 }
 
 // `<div id="${id}"> 
