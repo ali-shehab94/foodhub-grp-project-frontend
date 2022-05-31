@@ -36,3 +36,62 @@
                     </ul>
                 </div>
             </header>
+            <div class="edit-profile-wrapper">
+                <div class="edit-profile-container">
+                    <div class="left-column">
+                        <form class="form" action="" method="post">
+                            <div><br/>
+                                <input class="input" type="text" id="f_name" name="f_name" placeholder="Change your first name"><br>
+                            </div>
+                            <div><br/>
+                                <input class="input" type="text" id="l_name" name="l_name" placeholder="Change your last name"><br><br>
+                            </div>
+                            <div><br/>
+                                <input class="input" type="text" id="username" name="username" placeholder="Change your username"><br>
+                            </div>
+                            <div><br/>
+                                <input class="input" type="text" id="email" name="email" placeholder="Change your email"><br><br>
+                            </div>
+                            <div>
+                                <input class="input" type="password" id="l_name" name="l_name" placeholder="Change your password"><br><br>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-column">
+                        <div>
+                            <form class="form" action="" method="post">
+                                <div><br/>
+                                    <p>Change your Date of birth</p>
+                                    <input class="input-date" type="date" name="dob" id="dob" required>
+                                </div>
+                                <div><br/>
+                                    <input class="input" type="text" id="phone_number" name="phone_number" placeholder="Change your phone number"><br><br>
+                                </div>
+                                <p>Change your gender name</p>
+                                <div class="radio-buttons" id="gender">
+                                    <input class="input-radio" type="radio" name="gender" value="0" id="male">
+                                    <label for="male">Male</label>
+                                    <input class="input-radio" type="radio" name="gender" value="1" id="female">
+                                    <label for="female">Female</label>
+                                    <input class="input-radio" type="radio" name="gender" value="2" id="other">
+                                    <label for="other">Other</label>
+                                </div>
+                                <div><br/>
+                                    <input class="input" type="text" id="address" name="address" placeholder="Change your address"><br><br>
+                                </div>
+                                <div class="update-button">
+                                    <button type="button" class="card-btn" id="update-info-btn">Update my info</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../javascript/edit-profile.js"></script>
+</body>
+</html>

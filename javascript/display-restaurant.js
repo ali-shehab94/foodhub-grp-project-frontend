@@ -10,18 +10,18 @@ function getRestaurant() {
         url: 'http://localhost/Food-Hub-Back-end/getRestaurant.php',
         data: data,
     })
-       
-    .then(function (response) {
-        console.log(response.data)
-    // If we got a response at all
-    if (response.data != null){
-        console.log(response);
-    }else {
-        console.log(response.data)
-        console.log('response error with status code = ' + response);
-    }
-    })
 }
+
+.then(function (response) {
+    console.log(response.data)
+// If we got a response at all
+if (response.data != null){
+    console.log(response);
+}else {
+    console.log(response.data)
+    console.log('response error with status code = ' + response);
+}
+})
 getRestaurant();
 
 
