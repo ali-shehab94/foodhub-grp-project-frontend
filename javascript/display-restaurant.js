@@ -1,3 +1,4 @@
+
 let restaurantId = localStorage.getItem("restaurant_id");
 console.log("rest id --> " +restaurantId)
 let user_fname = localStorage.getItem("user_first_name");
@@ -112,3 +113,4 @@ $("#submit-review").click(function(){
     }
     })
 })
+
