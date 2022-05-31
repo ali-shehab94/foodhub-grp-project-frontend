@@ -138,6 +138,10 @@ a {
     color: #545557;
     padding: 15px;
 }
+.btn-simple:hover {
+    background-color: #606060;
+    color: #fff;
+}
 
 /* End of general CSS */
 /* ============================================================================ */

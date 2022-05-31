@@ -1,13 +1,16 @@
-console.log('hello');
+
 let mydata;
 let myresponse;
 //AXIOS
 $("#test").click(function(){
+    console.log('hello');
     axios({
      method: 'get',
      url: 'http://localhost/Food-Hub-Back-end/getPendingReviews.php',
     })
+    console.log('hello');
     .then(function (response) {
+        console.log('hello');
         mydata = response.data;
         parseData(mydata);
      if (response){
