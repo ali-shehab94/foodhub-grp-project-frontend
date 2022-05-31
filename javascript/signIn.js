@@ -3,7 +3,6 @@ let user_id = "";
 let user_first_name = "";
 
 
-
 //AXIOS
 $("#sign-in-btn").click(function(){
     let data = new FormData();
