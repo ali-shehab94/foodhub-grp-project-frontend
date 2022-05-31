@@ -6,7 +6,7 @@ $("#test").click(function(){
 
 axios({
  method: 'get',
- url: 'http://localhost/Food-Hub-Back-end/getRestaurants.php'
+ url: 'http://localhost/Food-Hub-Back-end/getRestaurantsAndRate.php'
 })
 
 .then(function (response) {
@@ -15,7 +15,6 @@ axios({
  if (response){
     myResponse = response;
     console.log(myResponse.data.length);
-    console.log('HEY');
  }else {
      console.log('response error with status code = ' + response.status);
  }
