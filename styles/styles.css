@@ -132,6 +132,12 @@ a {
     -webkit-transform: rotate(135deg);
 }
 
+.btn-simple {
+    font-weight: 400;
+    background-color: cornsilk;
+    color: #545557;
+    padding: 15px;
+}
 
 /* End of general CSS */
 /* ============================================================================ */
