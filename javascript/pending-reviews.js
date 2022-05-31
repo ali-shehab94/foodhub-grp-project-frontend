@@ -2,28 +2,21 @@ console.log('hello');
 let mydata;
 let myresponse;
 //AXIOS
-//$(window).on("load", function(){
 $("#test").click(function(){
     axios({
      method: 'get',
      url: 'http://localhost/Food-Hub-Back-end/getPendingReviews.php',
     })
-    
     .then(function (response) {
-
         mydata = response.data;
         parseData(mydata);
-
      if (response){
-
         //do something
      }else {
          console.log('response error with status code = ' + response.status);
      }
      })
-
 });
-
 
 function parseData(obj) {
     for (const data of obj) {
