@@ -1,42 +1,33 @@
 //Declaring a variable to store the response from the backend
-let myResponse = "";
+let user_id = "";
+let user_first_name = "";
 
 
 
 //AXIOS
 $("#sign-in-btn").click(function(){
     let data = new FormData();
-data.append('email', $("#email").val());
-data.append('password', $("#password").val());
+    data.append('email', $("#email").val());
+    data.append('password', $("#password").val());
 
-console.log('Axios here');
+    axios ({
+    method: 'post',
+    url: 'http://localhost/Food-Hub-Back-end/signIn.php',
+    data: data,
+    })
 
-axios ({
- method: 'post',
- url: 'http://localhost/Food-Hub-Back-end/signIn.php',
- data: data,
-})
+    .then(function (response) {
+        // If we got a response at all
+        if (response.data.success==true){
+            handleResponse(response.data);
+        }else {
+            console.log('response error with status code = ' + response);
+        }
+    })
+});
 
-.then(function (response) {
-    // console.log(response.data);
-    // console.log(response.data.response);
-    // console.log(response.data.success);
-    
- if (response.data.success==true){
-    handleResponse(response.data);
-    //alert('You are now signed in');
-    // console.log("Success");
-    //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
- }else {
-    console.log('response error with status code = ' + response);
- }
- }
-)});
 // Parse response to check "is found", "not found", "admin"
 function handleResponse(data){
-    console.log(data);
-    console.log(data.response);
-    console.log(data.is_admin);
     if (data.response == "User Not Found"){
         alert("User Not Found");
     }
@@ -44,8 +35,18 @@ function handleResponse(data){
         //Check for admin
         if(data.is_admin==1){
             alert("Redirecting admin")
+            window.location.replace("http://localhost/foodhub-grp-project-frontend/pages/admin.html");
         }else{
-            alert('You are now signed in');
+            user_id = data.user_id;
+            user_first_name = data.first_name;
+            console.log(user_id, user_first_name);
+            // Save to local Storage
+            localStorage.clear();
+            localStorage.setItem("user_id", user_id);
+            localStorage.setItem("user_first_name", user_first_name);
+            // Alert and redirect
+            alert(`Welcome ${user_first_name} You are now signed in`);
+            window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
         }
     }
 }
