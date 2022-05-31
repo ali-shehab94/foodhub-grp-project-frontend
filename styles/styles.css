@@ -253,7 +253,7 @@ a {
     
 }
 
-.display-user li > img:hover {
+.display-user li img:hover {
     filter: drop-shadow(0 0 20px white);
 }
 
@@ -523,7 +523,7 @@ a {
 }
 
 .section1-restaurants .rest-thumbnail {
-    width: 220px;
+    width: 150px;
     margin: 15px;
 }
 
