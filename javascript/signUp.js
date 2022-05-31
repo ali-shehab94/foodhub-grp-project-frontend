@@ -29,33 +29,32 @@ $("#sign-up-btn").click(function(){
 
 //AXIOS
 $("#sign-up-btn").click(function(){
-    let data = new FormData();
-    data.append('first_name', $("#firstnametxt").val());
-    data.append('last_name', $("#lastnametxt").val());
-    data.append('username', $("#usernametxt").val());
-    data.append('dob', $("#dob").val());
-    data.append('gender', gender);
-    data.append('email', $("#email").val());
-    data.append('password', $("#password").val());
-    data.append('phone_number', $("#phone_number").val());
-    data.append('address', $("#address").val());
+let data = new FormData();
+data.append('first_name', $("#firstnametxt").val());
+data.append('last_name', $("#lastnametxt").val());
+data.append('username', $("#usernametxt").val());
+data.append('dob', $("#dob").val());
+data.append('gender', gender);
+data.append('email', $("#email").val());
+data.append('password', $("#password").val());
+data.append('phone_number', $("#phone_number").val());
+data.append('address', $("#address").val());
 
-    axios({
-    method: 'post',
-    url: 'http://localhost/Food-Hub-Back-end/signUp.php',
-    data: data,
-    })
-
-    .then(function (response) {
-        if (response){
-        console.log("Success Hamze")
-        alert('You have been succefully registered!')
-        window.location.href = "sign-in.html";
-        //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
-        }else {
-        console.log('response error with status code = ' + response.status)
-        }
-    })
+axios({
+method: 'post',
+url: 'http://localhost/Food-Hub-Back-end/signUp.php',
+data: data,
+})
+.then(function (response) {
+    if (response){
+    console.log("Success Hamze")
+    alert('You have been succefully registered!')
+    window.location.href = "sign-in.html";
+    //window.location.replace("http://localhost/foodhub-grp-project-frontend/index.html");
+    }else {
+    console.log('response error with status code = ' + response.status)
+    }
+})
 });
 
 

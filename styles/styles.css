@@ -529,6 +529,13 @@ a {
 
 .section1-restaurants .row-container{
     margin: 0;
+
+}
+.section1-restaurants .restaurants-page-container {
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .section1-restaurants .rest-thumbnail {
@@ -565,6 +572,8 @@ a {
     justify-content: space-between;
     margin: 0 300px 0 250px;
 }
+
+
 
 .restaurant-container .rest-thumbnail {
     width: 200px;
@@ -627,6 +636,17 @@ a {
 
 .add-rest h1 {
     color: white;
+}
+
+.homepage1 .content-restaurant-rate {
+    display: flex;
+    background-color: rgba(0, 0, 0, .6);
+    width: fit-content;
+    align-items: unset;
+    margin-inline: auto;
+}
+#display-restaurant-here {
+    align-items: flex-start;
 }
 
 /*End of restaurant*/

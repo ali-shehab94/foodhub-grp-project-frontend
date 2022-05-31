@@ -1,12 +1,15 @@
+let user_fname = localStorage.getItem("user_first_name");
+// Display user name:
+document.getElementById("user_first_name").innerHTML = user_fname + "  ";
+
 //Declaring a variable to store the response from the backend
 let myResponse = '';
 let mydata;
 //AXIOS
 axios({
  method: 'get',
- url: 'http://localhost/Food-Hub-Back-end/getRestaurants.php'
+ url: 'http://localhost/Food-Hub-Back-end/getRestaurantsAndRate.php'
 })
-
 
 .then(function (response) {
     mydata = response.data;
@@ -18,7 +21,7 @@ function parseData(obj) {
         console.log(data);
         let id = data.restaurant_id;
         let cuisine = data.cuisine;
-        let rate = data.rating;
+        let rate = data.rate;
         let RestaurantName = data.name;
         let location = data.address
         console.log(id)

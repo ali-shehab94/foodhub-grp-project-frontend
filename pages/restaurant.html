@@ -26,7 +26,7 @@
                 <div class="user-img-name">
                     <ul class="display-user">
                         <li>
-                            <h4>John Doe</h4>
+                            <h4 id="user_name">John Doe</h4>
                         </li>
                         <li>
                             <a href="edit-profile.html">
@@ -36,22 +36,8 @@
                     </ul>
                 </div>
             </header>
-            <div class="restaurant-container">
-                <div>
-                    <div class="rest-profile">
-                        <img src="../assets/images/restaurants/kfc.jpg" alt="kfc" class="rest-thumbnail">
-                        <div class="rest-description">
-                            <br>
-                            <h1 id="name">Restaurant Name</h1>
-                            <br>
-                            <h2 id="cuisine">Cuisine</h2>
-                            <br>
-                            <h2 id="address">Address</h2>
-                            <h3></h3>
-                        </div>
-                    </div>
-                    <h4 class="opening-hrs" id="operating-hrs">Open Now - 10am - 12am midnight</h4>
-                    <h4 class="opening-hrs" id="phone-number">Call us on: 000 000 00</h4>
+            <div class="content-restaurant-rate">
+                <div id="display-restaurant-here">
                 </div>
                 <div class="rate-us">
                     <div>
@@ -71,25 +57,13 @@
                     <h5 id="rating">4.5⭐</h5>
                 </div>
             </div>
-            <div class="restaurant-section2">
-                <h1>About This Restaurant</h1>
-                <div style="display:inline-block">
-                    <h1>Cuisine: American</h1>
-                    <h1>Vegan Options: No</h1>
-                    <h1>Wifi: Yes</h1>
-                    <h1>Outdoors: No</h1>
-                </div>
-                <div>
-                    <h1>Reviews</h1>
-                    <div class="reviews-box">
-                    </div>
-                </div>
-            </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src= "../javascript/display-restaurant.js"></script>
-        <script src="../javascript/review-rest.js"></script>
         </section>
+        
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src= "../javascript/display-restaurant.js"></script>
+    <!-- <script src="../javascript/review-rest.js"></script> -->
 </body>
 </html>
