@@ -32,8 +32,9 @@ function parseData(obj) {
                                             <img src='../assets/images/restaurants/restaurant-img.jpeg' alt='chopsticks' class='rest-thumbnail' id='rest-thumbnail'>
                                             <h5 id='rest1name'>${RestaurantName}</h5>
                                             <div class='row-container'>
-                                                <h4>${cuisine} | ${location}</h4>
-                                                <h5>⭐${rate}⭐</h5>
+                                                <h4>Cuisine: ${cuisine}</h4> 
+                                                <h4>Location: ${location}</h4>
+                                                <h5>⭐Rating: ${rate}⭐</h5>
                                             </div>
                                         </div>
                                     </div>`
