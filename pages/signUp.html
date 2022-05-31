@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" href="../styles/styles.css">
-    
     <title>Sign-Up</title>
 </head>
 <body>
@@ -36,7 +35,7 @@
                     <p>Gender</p>
                     <div class="radio-buttons">
                         
-                        <input class="input-radio" type="radio" name="gender" value="male" id="male">
+                        <input class="input-radio" type="radio" name="gender" value="male" id="male" checked="checked">
                         <label for="male">Male</label>
                         <input class="input-radio" type="radio" name="gender" value="female" id="female">
                         <label for="female">Female</label>
@@ -58,6 +57,10 @@
                     <div class="input-form"> 
                         <input class="input" type="text" placeholder="Address" id="address">
                     </div>
+                </div>
+                <div class="image-part">
+                    <input type="file" id="image_input">
+                    <div id="display_image"></div>    
                 </div>
             </div>
             <div class="bottom-card">

@@ -465,16 +465,25 @@ a {
     justify-content: space-around;
     padding: 25px auto;
 }
-
-
 .main-sign-up .bottom-card {
     text-align: center;
 
 }
-.main-sign-up > .container {
-    
+.image-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    height: 90%;
 }
-
+.image-part #display_image {
+    width: 230px;
+    height: 230px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
 
 
 
