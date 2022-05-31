@@ -1,76 +1,110 @@
 //Declaring a variable to store the response from the backend
 let myResponse = '';
-
+let mydata;
 //AXIOS
-$("#test").click(function(){
-
 axios({
  method: 'get',
  url: 'http://localhost/Food-Hub-Back-end/getRestaurants.php'
 })
 
+
 .then(function (response) {
-    console.log(response);
-    console.log("received..");
- if (response){
-    myResponse = response;
-    console.log(myResponse.data.length);
-    console.log('HEY');
- }else {
-     console.log('response error with status code = ' + response.status);
- }
- }
-)});
+    mydata = response.data;
+    parseData(mydata);
+})
 
-
-function displayJson() {
-    var list = myResponse.data;
-    var cols = [];
-        
-    for (var i = 0; i < list.length; i++) {
-        for (var k in list[i]) {
-            if (cols.indexOf(k) === -1) {
-                    
-                // Push all keys to the array
-                cols.push(k);
-            }
-        }
-    }
-        
-    // Create a table element
-    var table = document.createElement("table");
-        
-    // Create table row tr element of a table
-    var tr = table.insertRow(-1);
-        
-    for (var i = 0; i < cols.length; i++) {
-            
-        // Create the table header th element
-        var theader = document.createElement("th");
-        theader.innerHTML = cols[i];
-            
-        // Append columnName to the table row
-        tr.appendChild(theader);
-    }
-        
-    // Adding the data to the table
-    for (var i = 0; i < list.length; i++) {
-            
-        // Create a new row
-        trow = table.insertRow(-1);
-        for (var j = 0; j < cols.length; j++) {
-            var cell = trow.insertCell(-1);
+function parseData(obj) {
+    for (const data of obj) {
+        console.log(data);
+        let id = data.restaurant_id;
+        let cuisine = data.cuisine;
+        let rate = data.rating;
+        let RestaurantName = data.name;
+        let location = data.address
+        console.log(id)
+        console.log(RestaurantName);
+        console.log(rate)
+        console.log(cuisine)
+        console.log(location)
+        let element = document.getElementById("rest-card-container");
+        element.innerHTML +=        `<div id="${id}">
+                                        <div class ='rest-card' onClick= "selectRestaurant(this)">
+                                            <img src='../assets/images/restaurants/restaurant-img.jpeg' alt='chopsticks' class='rest-thumbnail' id='rest-thumbnail'>
+                                            <h5 id='rest1name'>${RestaurantName}</h5>
+                                            <div class='row-container'>
+                                                <h4>Cuisine: ${cuisine}</h4> 
+                                                <h4>Location: ${location}</h4>
+                                                <h5>⭐Rating: ${rate}⭐</h5>
+                                            </div>
+                                        </div>
+                                    </div>`
                 
-            // Inserting the cell at particular place
-            cell.innerHTML = list[i][cols[j]];
-        }
     }
-        
-    // Add the newly created table containing json data
-    var el = document.getElementById("table");
-    el.innerHTML = "";
-    el.appendChild(table);
 }
 
+let selectRestaurant = (e) => {
+    let id = e.parentElement.id;
+    console.log("clicked");
+    console.log(id + "id")
+    localStorage.setItem("restaurant_id", id);
+    // console.log("id" + id);
+    window.location.href = "restaurant.html";
 
+}
 
+// `<div id="${id}"> 
+//                                     <span>${id}</span> 
+//                                     <span>${content}</span> 
+//                                     <span>${rate}</span> 
+//                                     <span>${date}</span> 
+//                                     <span>${User_fname}</span> 
+//                                     <span>${User_lname}</span> 
+//                                     <span>${RestaurantName}</span>  
+//                                     <span><i onClick= "acceptReview(this)" class="fa-solid fa-check"></i><i onClick= "deleteReview(this)" class="fa-solid fa-xmark"></i></span>  
+//                                 </div>`;
+
+// '<div class="row-container">
+// <div class="homepage-card-container">
+//     <div>
+//         <div class ="rest-card">
+//             <img src="../assets/images/restaurants/chopsticks.jpeg" alt="chopsticks" class="rest-thumbnail">
+//             <h5 id="rest1name">Restaurant</h5>
+//             <div class="row-container">
+//                 <h4>Cuisine | Location</h4>
+//                 <h5>⭐4.5⭐</h5>
+//             </div>
+//         </div>
+//     </div>
+//     <div>
+//         <div class ="rest-card">
+//             <img src="../assets/images/restaurants/falafel-abu-andreh.jpg" alt="falafel-abu-andreh" class="rest-thumbnail">
+//             <h5>Restaurant</h5>
+//             <div class="row-container">
+//                 <h4>Cuisine | Location</h4>
+//                 <h5>⭐4.5⭐</h5>
+//             </div>
+//         </div>
+//     </div>
+//     <div>
+//         <div class ="rest-card">
+//             <img src="../assets/images/restaurants/meza.jpeg" alt="meza" class="rest-thumbnail">
+//             <h5>Restaurant</h5>
+//             <div class="row-container">
+//                 <h4>Cuisine | Location</h4>
+//                 <h5>⭐4.5⭐</h5>
+//             </div>
+//         </div>
+//     </div>
+//     <div>
+//         <div class ="rest-card">
+//             <img src="../assets/images/restaurants/sushi-circle.jpg" alt="sushi-circle" class="rest-thumbnail">
+//             <h5>Restaurant</h5>
+//             <div class="row-container">
+//                 <h4>Cuisine | Location</h4>
+//                 <h5>⭐4.5⭐</h5>
+//             </div>
+//         </div>
+//     </div>
+// </div>
+// </div>
+// <div class="row-container">'

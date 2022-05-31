@@ -333,7 +333,7 @@ a {
 .row-container {
     margin: 2% 0 4% 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -342,15 +342,29 @@ a {
 .rest-card{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .homepage-card-container {
     width: 1400px;
-    height: 350px;
+    height: 320px;
     background-color: #f5f5f5cb;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
+    padding-top: 15px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 20px black);
+}
+
+.restaurants-page-container {
+    width: 1400px;
+    background-color: #f5f5f5cb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
     padding-top: 15px;
     border-radius: 15px;
@@ -383,6 +397,18 @@ a {
 .rate {
     margin: 0 10% 0 10%;
     justify-content: space-around;
+}
+
+.row-container h4, h5 {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+.row-container > h5 {
+    font-size: 30px;
+    font-family: "foodhub-font", Helvetica, sans-serif;
 }
 
 .row-container > img {
@@ -483,24 +509,22 @@ a {
 /*=============================================================================*/
 /*restaurants page*/
 
-.rest-card h5 {
+.rest-card > h5 {
     font-family: Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 4px;
+    color: black;
+    font-weight: bolder;
 }
 
-.rest-card h4 {
-    font-family: Helvetica, sans-serif;
-    font-size: 15px;
-    margin-left: 5px;
-}
 
 .section1-restaurants .row-container{
     margin: 0;
 }
 
 .section1-restaurants .rest-thumbnail {
-    width: 200px;
+    width: 220px;
+    margin: 15px;
 }
 
 .section1-restaurants .rest-thumbnail:hover {
