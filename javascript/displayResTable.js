@@ -15,7 +15,6 @@ axios({
  if (response){
     myResponse = response;
     console.log(myResponse.data.length);
-    console.log('HEY');
  }else {
      console.log('response error with status code = ' + response.status);
  }

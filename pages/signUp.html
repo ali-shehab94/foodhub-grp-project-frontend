@@ -17,55 +17,59 @@
                 <img src="../assets/logos/foodhub-logo.png"/>
                 <h1>Become a professional foodie!</h1>
             </div>
-            <div class="middle-card">
-                <div class="middle-left">
-                    <div class="input-form">
-                        <input class="input" type="text" placeholder="First Name" id="firstnametxt">
-                    </div>
-                    <div class="input-form">
-                        <input class="input" type="text" placeholder="Last Name" id="lastnametxt">
-                    </div>
-                    <div class="input-form">
-                        <input class="input" type="text" placeholder="Username" id="usernametxt">
-                    </div>
-                    <div>
-                        <p>Date of birth</p>
-                        <input class="input-date" type="date" name="dob" id="dob">
-                    </div>
-                    <p>Gender</p>
-                    <div class="radio-buttons">
-                        
-                        <input class="input-radio" type="radio" name="gender" value="male" id="male" checked="checked">
-                        <label for="male">Male</label>
-                        <input class="input-radio" type="radio" name="gender" value="female" id="female">
-                        <label for="female">Female</label>
-                        <input class="input-radio" type="radio" name="gender" value="other" id="other">
-                        <label for="other">Other</label>
-                    </div>
+            <form action="">
+                <div class="middle-card">
+                    <div class="middle-left">
+                        <div class="input-form">
+                            <input class="input" type="text" placeholder="First Name" id="firstnametxt" required>
+                        </div>
+                        <div class="input-form">
+                            <input class="input" type="text" placeholder="Last Name" id="lastnametxt" required>
+                        </div>
+                        <div class="input-form">
+                            <input class="input" type="text" placeholder="Username" id="usernametxt" required>
+                        </div>
+                        <div>
+                            <p>Date of birth</p>
+                            <input class="input-date" type="date" name="dob" id="dob" required>
+                        </div>
+                        <p>Gender</p>
+                        <div class="radio-buttons">
+                            
+                            <input class="input-radio" type="radio" name="gender" value="male" id="male" checked="checked">
+                            <label for="male">Male</label>
+                            <input class="input-radio" type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label>
+                            <input class="input-radio" type="radio" name="gender" value="other" id="other">
+                            <label for="other">Other</label>
+                        </div>
 
+                    </div>
+                    <div class="middle-right">
+                        <div class="input-form">
+                            <input class="input" type="text" placeholder="Enter you email" id="email" required>
+                        </div>
+                        <div class="input-form">
+                            <input class="input" type="password" placeholder="Enter your password" id="password" required>
+                        </div>
+                        <div class="input-form"> 
+                            <input class="input" type="text" placeholder="Phone number" id="phone_number" required>
+                        </div>
+                        <div class="input-form"> 
+                            <input class="input" type="text" placeholder="Address" id="address" required>
+                        </div>
+                    </div>
+                    
+                    <div class="image-part">
+                        <input type="file" id="image_input">
+                        <div id="display_image"></div>    
+                    </div>
                 </div>
-                <div class="middle-right">
-                    <div class="input-form">
-                        <input class="input" type="text" placeholder="Enter you email" id="email">
-                    </div>
-                    <div class="input-form">
-                        <input class="input" type="password" placeholder="Enter your password" id="password">
-                    </div>
-                    <div class="input-form"> 
-                        <input class="input" type="text" placeholder="Phone number" id="phone_number">
-                    </div>
-                    <div class="input-form"> 
-                        <input class="input" type="text" placeholder="Address" id="address">
-                    </div>
+                <div class="bottom-card">
+                    <button type="button" class="btn" id="sign-up-btn">Sign Up</button>
                 </div>
-                <div class="image-part">
-                    <input type="file" id="image_input">
-                    <div id="display_image"></div>    
-                </div>
-            </div>
-            <div class="bottom-card">
-                <button type="button" class="btn" id="sign-up-btn">Sign Up</button>
-            </div>
+                <input type="submit" style="display:none;">
+            </form>
         </div>
     </div>
     <!--JS-->
